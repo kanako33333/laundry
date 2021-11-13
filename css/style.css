@@ -1,0 +1,171 @@
+
+body{
+    font-family: "ヒラギノ明朝 ProN","HiraMinProN", "HG明朝E", "ＭＳ Ｐ明朝", "MS PMincho", "MS 明朝", serif;
+    color: #6E5C52;
+}
+
+/* section */
+
+.section-wrap{
+    padding: 100px;
+}
+
+.section-inner{
+    margin: 0 auto;
+    display: flex;
+}
+
+.section-content{
+    width: 50%;
+}
+
+.section-image{
+    width: 50%;
+    overflow: hidden;
+}
+
+.section-ttl{
+    font-size: 30px;
+    font-weight: bold;
+    color: #C73613;
+    margin-bottom: 50px;
+}
+
+.section-text{
+    font-size: 18px;
+    line-height: 1.7;
+}
+
+/* serviceとaccess */
+
+.service,
+.access{
+    background-color: #FCEDE5;
+}
+
+.service-ttl,
+.service-text,
+.access-ttl,
+.access-text{
+    padding-left: 100px;
+}
+
+/* header */
+
+.header{
+    display: flex;
+    margin: 50px 100px;
+    background: rgba(255,255,255,0.8);
+    border: 1px solid #6E5C52;
+    border-radius: 10px;
+    height: 80px;
+    width: 85vw;
+    line-height: 80px;
+    z-index: 999;
+    position: absolute;
+}
+
+.header-nav{
+    width: 50%;
+    padding-right: 50px;
+}
+
+.header-list{
+    display: flex;
+    justify-content: right;
+    white-space: nowrap;
+}
+
+.header-logo{
+    width: 80px;
+}
+
+.header-ttl{
+    display: flex;
+    width: 50%;
+}
+
+.header-name{
+    font-size: 30px;
+    font-weight: bold;
+    padding-left: 30px;
+}
+
+.header-item{
+    padding-left: 30px;
+    font-size: 20px;
+    transition: 0.3s;
+}
+
+.header-item:hover{
+    font-weight: bold;
+}
+
+
+/* mv */
+
+.mv{
+    position: relative;
+    height: 100vh;
+    background: url(../img/cafe.jpg) center / cover;
+    overflow: hidden;
+}
+
+.mv-copy{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 85px;
+    padding: 15px;
+    background: rgba(255,255,255,0.8);
+    border-radius: 10px 80px 30px 55px;
+    border-bottom: 3px solid #C73613;
+    border-right: 1px solid #C73613;
+    font-size: 40px;
+    color: #C73613;
+    font-family: "筑紫B丸ゴシック","筑紫A丸ゴシック","HG明朝E", "ＭＳ Ｐ明朝", "MS PMincho", "MS 明朝", serif;
+}
+
+.mv-list{
+    position: absolute;
+    bottom: 50px;
+    left: 100px;
+    font-size: 25px;
+    font-weight: bold;
+    color: #C73613;
+}
+
+.mv-item + .mv-item{
+    padding-top: 15px;
+}
+
+/* access-btn */
+
+.access-btn{
+    position: fixed;
+    bottom: 50px;
+    right: 30px;
+    padding: 30px 10px;
+    background: rgba(255,255,255,0.8);
+    border-radius: 100px;
+    border-bottom: 3px solid #AB13C7;
+    border-right: 1px solid #AB13C7;
+    color: #AB13C7;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: "筑紫B丸ゴシック","筑紫A丸ゴシック","HG明朝E", "ＭＳ Ｐ明朝", "MS PMincho", "MS 明朝", serif;
+}
+
+/* access */
+
+.access-color{
+    color: #AB13C7;
+}
+
+/* footer */
+
+.footer{
+    text-align: center;
+    height: 50px;
+    line-height: 50px;
+}
