@@ -36,6 +36,10 @@ body{
     line-height: 1.7;
 }
 
+.responsive-image{
+    display: none;
+}
+
 /* serviceとaccess */
 
 .service,
@@ -101,6 +105,20 @@ body{
     font-weight: bold;
 }
 
+.header-menu{
+    display: none;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.header-menu img{
+    display: block;
+}
+
 
 /* mv */
 
@@ -122,6 +140,7 @@ body{
     border-bottom: 3px solid #C73613;
     border-right: 1px solid #C73613;
     font-size: 40px;
+    line-height: 1.7;
     color: #C73613;
     font-family: "筑紫B丸ゴシック","筑紫A丸ゴシック","HG明朝E", "ＭＳ Ｐ明朝", "MS PMincho", "MS 明朝", serif;
 }
@@ -133,6 +152,13 @@ body{
     font-size: 25px;
     font-weight: bold;
     color: #C73613;
+}
+
+.mv-item{
+    text-shadow:0.5px  0.5px 4px #fff,
+                -0.5px  0.5px 4px #fff,
+                0.5px -0.5px 4px #fff,
+                -0.5px -0.5px 4px #fff;
 }
 
 .mv-item + .mv-item{
@@ -162,10 +188,147 @@ body{
     color: #AB13C7;
 }
 
+.gmap {
+    height: 0;
+    overflow: hidden;
+    padding-bottom: 35%;
+    position: relative;
+    }
+    .gmap iframe {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    }
+
 /* footer */
 
 .footer{
     text-align: center;
     height: 50px;
     line-height: 50px;
+}
+
+/* ハンバーガーメニュー */
+
+.header.is-active{
+    border: none;
+    background: none;
+}
+.header-ttl.is-active{
+    display: none;
+}
+
+
+/* tab版 */
+
+@media(max-width: 1150px){
+    /* headerのmenu変更 */
+    .header-nav{
+        display: none;
+    }
+    .header-menu{
+        display: block;
+    }
+    .header-list{
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-color: #fff;
+    }
+    /* タイトル調整 */
+    .header-ttl{
+        width: auto;
+    }
+    /* セクション調整 */
+    .section-inner{
+        display: block;
+    }
+    /* セクション画像調整 */
+    .section-image{
+        display: none;
+    }
+    /* レスポンシブ用画像表示 */
+    .responsive-image{
+        display: block;
+        padding-bottom: 50px;
+    }
+    /* セクション内横幅調整 */
+    .section-content,
+    .responsive-image{
+        width: 100%;
+    }
+    
+    /* 文字の整列 */
+    .service-ttl,
+    .service-text,
+    .access-ttl,
+    .access-text{
+        padding-left: 0;
+    }
+    .header{
+        left: 0;
+        right: 0;
+        margin: 50px auto;
+    }
+}
+
+/* スマホ版 */
+@media(max-width: 650px){
+     /* header幅調整 */
+    .header{
+        width: 95vw;
+    }
+    .header-logo{
+        width: 18vw;
+    }
+    .header-name{
+        font-size: 5.5vw;
+        padding-left: 0;
+    }
+    .header{
+        margin: 30px auto;
+    }
+    /* セクション余白調整 */
+    .section-wrap{
+        padding: 50px 0;
+    }
+    .section-ttl{
+        margin-bottom: 0;
+    }
+    .section-text{
+        font-size: 16px;
+        line-height: 1.6;
+    }
+    .responsive-image{
+        padding-bottom: 20px;
+    }
+    /* mv調整 */
+    .mv-copy{
+        top: 40%;
+        padding: 0;
+        left: 0;
+        font-size: 6.8vw;
+        font-weight: bold;
+        background: none;
+        border: none;
+        text-shadow:0.5px  0.5px 4px #fff,
+                -0.5px  0.5px 4px #fff,
+                0.5px -0.5px 4px #fff,
+                -0.5px -0.5px 4px #fff;
+
+    }
+    .mv-list{
+        font-size: 5vw;
+        top: 50%;
+        left:0;
+    }
+    /* ボタン調整 */
+    .access-btn{
+        right: 10px;
+        bottom: 10px;
+    }
 }
